@@ -18,6 +18,11 @@
                             </template>
                         </el-input>
                     </el-form-item>
+                    <el-form-item>
+                        <el-button type="info" @click="onVisit">访客登录</el-button>
+                        <el-button type="primary" @click="onLogIn">登录</el-button>
+                        <el-button>取消</el-button>
+                    </el-form-item>
                 </el-form>
             </div>
         </el-col>
@@ -32,6 +37,24 @@ export default {
                 username: "",
                 password: ""
             }
+        }
+    },
+    methods: {
+        onVisit () {
+            this.$message({
+                message: "访客登录"
+            })
+        },
+        onLogIn () {
+            this.$message({
+                message: "用户登录：当前功能未实现",
+                type: "error"
+            })
+        },
+        onCancel () {
+            this.$message({
+                message: "取消",
+            })
         }
     }
 }
