@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>首页</h1>
+        <h1 class="header">首页</h1>
     </div>
 </template>
 
@@ -10,6 +10,5 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="less">
 </style>
